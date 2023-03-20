@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="computedstyle.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  <img src="../images/logo.svg" alt="logo">
+  <img src="./images/logo.svg" alt="logo">
   <main>
     <form>
       <section id="fSection">
@@ -24,7 +24,7 @@
           <!-- Bill -->
           <div class="bill">
             <label for="bill">Bill</label>
-            <input type="number" id="billInput" class="longInput" placeholder="0" required aria-required="true" autocomplete="off">
+            <input type="number" id="billInput" class="longInput" placeholder="0" required aria-required="true" autocomplete="off" maxlength="3" min="0" max="3">
           </div>
 
           <!-- Select Tip % 5% 10% 15% 25% 50% Custom -->
@@ -46,7 +46,7 @@
               <label for="people">Number of people</label>
               <p class="warning">can't be zero</p>
             </div>
-            <input type="number" id="peopleInput" class="longInput" placeholder="0" required aria-required="true" autocomplete="off" value="2">
+            <input type="number" id="peopleInput" class="longInput" placeholder="0" required aria-required="true" autocomplete="off" value="2" maxlength="2" min="0" max="2">
           </div>
 
 

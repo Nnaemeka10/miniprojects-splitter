@@ -160,7 +160,7 @@ form{
     flex-wrap: wrap;
 }
 #billInput{
-    background-image: url(../images/icon-dollar.svg);
+    background-image: url(./images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position: 4% ;
 }
@@ -170,7 +170,7 @@ form{
     justify-content: space-between;
 }
 #peopleInput{
-    background-image: url(../images/icon-person.svg);
+    background-image: url(./images/icon-person.svg);
     background-repeat: no-repeat;
     background-position: 4% ;
 }

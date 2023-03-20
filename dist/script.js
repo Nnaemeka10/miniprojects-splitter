@@ -164,3 +164,9 @@ custom.addEventListener('keyup', e=>{
         total.value = "$0.00"
     }
 })
+
+inputs.forEach((input)=>{
+    input.oninput= function() {
+        if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);  
+    }
+})
