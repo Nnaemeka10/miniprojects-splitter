@@ -167,6 +167,6 @@ custom.addEventListener('keyup', e=>{
 
 inputs.forEach((input)=>{
     input.oninput= function() {
-        if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);  
+        if (this.value.length > this.dataset.value) this.value = this.value.slice(0, this.maxLength);  
     }
 })

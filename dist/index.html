@@ -16,15 +16,18 @@
   </style>
 </head>
 <body>
-  <img src="./images/logo.svg" alt="logo">
+  <header>
+    <h1 style="color: var(--Light-grayish-cyan); cursor: default;">This is the beginning</h1>
+    <img src="./images/logo.svg" alt="logo">
+  </header>
   <main>
     <form>
-      <section id="fSection">
+      <div id="fSection">
         
           <!-- Bill -->
           <div class="bill">
-            <label for="bill">Bill</label>
-            <input type="number" id="billInput" class="longInput" placeholder="0" required aria-required="true" autocomplete="off" maxlength="3" min="0" max="3">
+            <label for="billInput">Bill</label>
+            <input type="number" id="billInput" class="longInput" placeholder="0" required aria-required="true" autocomplete="off" data-value="3">
           </div>
 
           <!-- Select Tip % 5% 10% 15% 25% 50% Custom -->
@@ -43,22 +46,22 @@
           <!--  Number of People -->
           <div class="people">
             <div id="labelDiv">
-              <label for="people">Number of people</label>
+              <label for="peopleInput">Number of people</label>
               <p class="warning">can't be zero</p>
             </div>
-            <input type="number" id="peopleInput" class="longInput" placeholder="0" required aria-required="true" autocomplete="off" value="2" maxlength="2" min="0" max="2">
+            <input type="number" id="peopleInput" class="longInput" placeholder="0" required aria-required="true" autocomplete="off" value="2" data-value="2">
           </div>
 
 
-      </section>
+      </div>
 
 
-      <section id="sSection">
+      <div id="sSection">
           <div class="resultDiv" id="fResultDiv">
             <!-- Tip Amount / person -->
               <div class="resultDivLabel">
                 <p>Tip Amount</p>
-                <label>/ person</label>
+                <label for="tip">/ person</label>
               </div>
 
               <div>
@@ -72,7 +75,7 @@
             <!-- Total / person -->
             <div class="resultDivLabel">
               <p>Total</p>
-              <label>/ person</label>
+              <label for="total">/ person</label>
             </div>
             <div>
               <input type="text" id="totaL" value="$0.00" class="fatInput" disabled>
@@ -82,17 +85,17 @@
 
           <!-- Reset -->
           <div class="resultDiv" id="submit">
-            <button type="reset" disabled aria-disabled="true">RESET</button>
+            <button type="reset" disabled>RESET</button>
           </div>
-        </section>
+      </div>
     </form>
   </main>
  
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Nnaemeka --mentOP</a>.
-  </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
